@@ -1,0 +1,343 @@
+﻿*{
+	margin: 0 auto;
+	padding: 0;
+}
+.container{
+	width: 474px;
+	height: 552px;
+	border: 1px solid gray;
+	position: relative;
+}
+@keyframes hair{
+	from{
+	transform: rotate(27deg);
+	}
+	to{
+	transform: rotate(7deg);
+	}
+}
+.hair{
+	width: 130px;
+	height: 100px;
+	border-radius: 50%;
+	border-top: 8px solid #000;
+	position: absolute;
+	left: 120px;
+	top: 30px;
+	transform: rotate(27deg);
+	-webkit-animation:2s hair infinite linear alternate;
+}
+.hair2{
+	width: 130px;
+	height: 100px;
+	border-radius: 50%;
+	border-top: 8px solid #000;
+	position: absolute;
+	left: 145px;
+	top: 45px;
+	transform: rotate(20deg);
+}
+@keyframes hand{
+	from{
+	transform: rotate(-45deg);
+	}
+	to{
+	transform: rotate(-50deg);
+	}
+}
+.hand{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #f8d845;
+	transform: rotate(-45deg);
+	border-radius: 15px;
+	border: 5px solid #000;
+	position: absolute;
+	top: 250px;
+	left: 95px;
+	-webkit-animation:0.5s hand infinite ease-out alternate;
+}
+@keyframes hand2{
+	from{
+	transform: rotate(50deg);
+	}
+	to{
+	transform: rotate(45deg);
+	}
+}
+.hand2{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #f8d845;
+	transform: rotate(45deg);
+	border-radius: 15px;
+	border: 5px solid #000;
+	position: absolute;
+	top: 250px;
+	right: 95px;
+	-webkit-animation:0.5s hand2 infinite ease-in alternate;
+}
+.hand .hands,.hand2 .hands2{
+	width: 65px;
+	height: 5px;
+	background-color: #000;
+	position: absolute;
+	top: 15px;
+	left: 18px;
+}
+.body{
+	position: relative;
+	margin-top: 50px;
+	height: 400px;
+	width: 240px;
+	background-color: #f9d948;
+	border-radius: 120px;
+	border: 5px solid #000;
+	overflow: hidden;
+}
+ .leftcircle{
+        width: 30px;
+        height: 30px;
+        border-radius: 0 0 30px 0;
+         border: 6px solid #000;
+        position: absolute;
+        top: 300px;
+        z-index: 4;
+        border-left: none;
+        border-top: none;
+        left: 0px;
+}
+ .rightcircle{
+        width: 30px;
+        height: 30px;
+        border-radius: 0 0 30px 0;
+         border: 6px solid #000;
+        position: absolute;
+        top: 300px;
+        z-index: 4;
+        border-left: none;
+        border-top: none;
+        right: 0px;
+        transform: rotate(90deg);
+}
+.left{
+	width: 40px;
+	height: 20px;
+	transform: rotate(5deg);
+	background-color: #000;
+	position: absolute;
+	top:100px;
+	left: 0;
+}
+.right{
+	width: 40px;
+	height: 20px;
+	background-color: #000;
+	transform: rotate(-5deg);
+	position: absolute;
+	top:100px;
+	right: 0;
+}
+.glass,.glass2{
+	height: 86px;
+	width: 86px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 4px solid #000;
+}
+.glass{
+	position: absolute;
+	top: 60px;
+	left: 30px;
+}
+.glass2{
+	position: absolute;
+	top: 60px;
+	left: 121px;
+}
+@keyframes eye{
+	from{
+		transform: rotate(0deg);
+		left: 10px;
+	}
+	to{
+		transform: rotate(180deg);
+		right: 10px;
+	}
+}
+.eyes,.eyes2{
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top:8px;
+	left: 8px;	
+	transform-origin: center;
+}
+.eye,.eye2{
+	width: 40px;
+	height: 40px;
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	-webkit-animation:4s eye infinite linear alternate;
+}
+.cloth_top_left,.cloth_top_right{
+	width: 15px;
+	height: 140px;
+	border: 5px solid #000;
+	background-color: #2074a0;
+	z-index: 2;	
+}
+.cloth_top_left{
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 118px;
+	left: -10px;
+}
+.cloth_top_right{
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 118px;
+	right: -10px;
+}
+.cloth_top_left  .dot,.cloth_top_right  .dot{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+.cloth_center{
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top:225px ;
+	left: 35px;
+	background-color: #2074a0;
+	border: 5px solid #000;
+	border-bottom: none;
+	z-index: 1;
+}
+.cloth_foot{
+	position: absolute;
+	top: 285px;
+	background-color: #2074a0;
+	width: 240px;
+	height: 120px;
+	border-radius: 0 0 120px 120px;
+	border-top: 5px solid #000;
+}
+.pocket{
+	width: 60px;
+	height: 45px;
+	border: 5px solid #000;
+	position: absolute;
+	top:280px;
+	left: 90px;
+	z-index: 3;
+	border-radius: 0 0 20px 20px;
+}
+.line{
+	width: 5px;
+	height: 45px;
+	background-color: #000;
+	position: absolute;
+	bottom: 0px;
+	left: 120px;
+	z-index: 4;
+	border-radius: 2.5px;
+}
+.mouse{
+	width: 50px;
+	height: 20px;
+	border: 5px solid #000;
+	border-bottom-left-radius: 27px;
+	border-bottom-right-radius: 40px;
+	background-color: #fff;
+	position: absolute;
+	top:170px;
+	left: 95px;
+/*	-webkit-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);
+	-o-transform: rotate(-35deg);
+	transform: rotate(-35deg);*/
+	-webkit-animation: 3s mouse ease-in-out infinite;
+}
+@keyframes mouse{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0.8);
+	}
+}
+@keyframes shoe{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(10deg);
+	}
+}
+.shoe{
+	width: 35px;
+	height: 60px;
+	background-color: #000;
+	position: absolute;
+	left: 200px;
+	bottom: 45px;
+	z-index: -1;
+	-webkit-animation:0.5s shoe infinite ease-in alternate;
+}
+.shoe:before{
+	content: "";
+	width: 50px;
+	height: 35px;
+	background-color: #000;
+	border-radius: 25px;
+	position: absolute;
+	left: -35px;
+	top: 25px;
+}
+.shoe1:after{
+	content: "";
+	width: 50px;
+	height: 35px;
+	background-color: #000;
+	border-radius: 25px;
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+@keyframes shoe1{
+	from{
+		transform: rotate(-10deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+.shoe1{
+	width: 35px;
+	height: 60px;
+	background-color: #000;
+	position: absolute;
+	left: 245px;
+	bottom: 45px;
+	z-index: -1;
+	-webkit-animation:0.5s shoe1 infinite ease-out alternate;
+}
